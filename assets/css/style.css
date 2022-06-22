@@ -1,0 +1,135 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html, 
+body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+    height: 100vh;
+	overflow-x: hidden;
+}
+
+h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+p,
+label {
+    font-size: 14px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+}
+
+input[type="checkbox"]:disabled{
+    outline: 2px solid #000000;
+}
+
+.container {
+    padding: 15px;
+}
+
+.pizza {
+    border: 2px solid #000000;
+    padding: 0 30px;
+}
+
+.pizza-main {
+    width: 100%;
+}
+
+.pizza-main img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.pizza-main .pizza-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+}
+
+.pizza-main .pizza-menu h3 {
+    text-transform: uppercase;
+}
+
+.pizza-main .pizza-menu .pizza-menu__item {
+    background-color: lightskyblue;
+    border: 2px solid #000000;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza-main .pizza-menu .pizza-menu__item p {
+    align-self: flex-start;
+}
+
+.pizza-sizes .pizza-sizes__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.pizza-sizes .pizza-sizes__list li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.pizza-sizes .pizza-sizes__list li input {
+    margin-bottom: 10px;
+}
+
+.pizza-topping .pizza-topping__list li {
+    display: flex;
+    align-items: center;
+}
+
+.pizza-topping .pizza-topping__list li input{
+    margin-right: 10px;
+}
+
+.pizza-topping .pizza-topping__list {
+    list-style: none;
+    column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+}
+
+.pizza-price .pizza-price__result {
+    padding-left: 50px;
+}
+
+.pizza-price .pizza-price__result span {
+    font-size: 18px;
+}
+
+@media (max-width: 991px) {
+    input[type="radio"],
+    input[type="checkbox"] {
+        width: auto;
+        height: auto;
+    }
+}
